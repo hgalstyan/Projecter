@@ -1,0 +1,43 @@
+extends ./layout
+block content
+	main.login.flex.between
+			.basis-4
+				h3 Get Inside to start your project
+				form(method="POST" action="/login/signin")
+					input(type="email" name="logEmail" placeholder="Email")
+					input(type="password" name="logPassword" placeholder="Password")
+					br
+					input(type="submit" value="Log In")
+				h3 Or use your LinkedIn account
+				.wrapper.linkedin
+					svg#Layer_1(enable-background='new 0 0 32 32', height='48px', version='1.0', viewbox='0 0 32 32', width='48px', xml:space='preserve', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+						g
+							path(d='M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z', fill='#007BB5')
+							g
+								rect(fill='#FFFFFF', height='14', width='4', x='7', y='11')
+								path(d='M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z', fill='#FFFFFF')
+								circle(cx='9', cy='8', fill='#FFFFFF', r='2')
+						g
+							g
+								g
+									g
+										g
+											g
+
+					p LinkedIn
+			.basis-4
+				.description
+					h3 Why register?
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						| sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+						| veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						| Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+				h3 Not Registered? To register please fill the blank below
+				form(method="POST" action="/login/register")
+					input(type="text" name="firstname" placeholder="First Name")
+					input(type="text" name="lastname" placeholder="Last Name")
+					input(type="email" name="regEmail" placeholder="Email")
+					input(type="password" name="regPassword" placeholder="Password")
+					br
+					input(type="submit" value="Register")

@@ -1,0 +1,27 @@
+{
+  "name": "traveler",
+  "version": "1.0.0",
+  "description": "Travel app that will help you with your journey.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "nodemon index.js"
+  },
+  "author": "Hovhannes Galstyan",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.0.6",
+    "mongoose": "^5.0.14",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "mongoose-seed": "^0.4.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.4"
+  }
+}

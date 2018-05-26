@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 2000px;
+    font-family: "Montserrat", "Roboto", "Lato", "Open Sans",sans-serif;
+    color: #444;
+    background-color: #efefef;
+    text-align: center;
+}
+
+header {
+    background-color: #325566;
+    color: #D5D9DB;
+}
+
+.navigation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    width: 100%;
+    margin: 0;
+}
+.main_nav {
+    display: none;
+}
+.main_nav a{
+    color: #D5D9DB;
+}
+
+.row {
+    margin-top: 20px; 
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project{
+    margin: 30px;
+}
+
+.profile_pic{
+    margin: 0 auto;
+    width: 70px;
+    padding-top: 10px;
+    border-top: 2px solid rgb(57, 60, 88)
+}
+
+.col {
+    width: 80%;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+.skill_name {
+    width: 150px;
+    margin: 10px auto;
+    border: 1px solid rgb(75, 68, 68);
+    border-radius: 4px;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logout-btn {
+    color: #B9B9B9; 
+}
+
+.login-btn {
+    background-color: #053b81;
+    color: #B9B9B9; 
+}
+
+.login{
+    max-width: 1000px;
+    margin: 0 auto;    
+}
+
+input[type=text], input[type=password], input[type=email], select, input[type=submit]{
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+input[type=text], input[type=password], input[type=email], select {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #053b81;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #032757;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.search{
+    max-width: 600px;
+    width: 60%
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+@media(min-width: 720px){
+    .filter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    basis-2{
+        flex-basis: 200px;
+    }
+}
+
+@media (min-width: 1000px){
+    
+    .hamburger{
+        display: none;
+    }
+
+    .profile_pic{
+        padding-left: 10px;
+        margin: 0 10px;
+        border-top: none;
+        border-left: 2px solid rgb(57, 60, 88)
+    }
+
+    .logo { 
+        margin-left:10px;
+    }
+
+    
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .between{
+        justify-content: space-between;
+    }
+    .around{
+        justify-content: space-around;
+    }
+
+    .basis-3{
+        flex-basis: 400px;
+    }
+    .basis-4 {
+        flex-basis: 400px;
+    }
+
+    .basis-6{
+        flex-basis: 600px;
+    }
+}
